@@ -13,3 +13,12 @@
    ```
    docker-compose up -d
    ```
+3. Перейдіть в Package Manager Console.
+4. Оберіть Default Project: FairHire.Infrastructure.Postgres.
+5. Виконайте команди в Package Manager Console:
+   ```
+   add-migration Init
+   ```
+   ```
+   update-database
+   ```
