@@ -1,0 +1,42 @@
+services:
+  api:
+    image: k0nty/fairhire-api:latest
+    container_name: fairhire-api-service
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    depends_on:
+      db-migrator:
+        condition: service_completed_successfully
+
+  db-migrator:
+    image: k0nty/fairhire-migrator:latest
+    container_name: fairhire-migrator-service
+    env_file:
+      - .env
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: postgres:15-alpine
+    container_name: fair_hire_db
+    restart: always
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_NAME}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:
