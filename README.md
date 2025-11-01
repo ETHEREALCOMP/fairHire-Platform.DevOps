@@ -11,7 +11,7 @@
 ## 3. Запуск
 ### *Windows*
 У папці **fairHire-Platform.DevOps/run-backend-package** знаходиться **start.bat**. Після його запуску відбувається автоматичне розгортання всього бекенд-середовища.
-### *MacOS/Linux*
+### *MacOS*
 У папці **fairHire-Platform.DevOps/run-backend-package** знаходиться **start.command**. Після його запуску відбувається автоматичне розгортання всього бекенд-середовища.
 
 ## 4. Перевірка
