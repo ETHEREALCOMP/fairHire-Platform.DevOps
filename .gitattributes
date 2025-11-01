@@ -1,4 +1,4 @@
 .gitattributes text eol=lf
 .gitignore     text eol=lf
-
-*.sh text eol=lf
+*.sh           text eol=lf
+*.command      text eol=lf
