@@ -9,9 +9,9 @@
 Вам потрібно запулити собі репозиторій **fairHire-Platform.DevOps**
 
 ## 3. Запуск
-### Windows
+### *Windows*
 У папці **fairHire-Platform.DevOps/run-backend-package** знаходиться **start.bat**. Після його запуску відбувається автоматичне розгортання всього бекенд-середовища.
-### MacOS/Linux
+### *MacOS/Linux*
 У папці **fairHire-Platform.DevOps/run-backend-package** знаходиться **start.sh**. Після запуску скрипта відбувається автоматичне розгортання всього бекенд-середовища.
 #### Покроковий запуск
   1. Cmd + Space
