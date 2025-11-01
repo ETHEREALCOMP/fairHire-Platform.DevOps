@@ -12,37 +12,7 @@
 ### *Windows*
 У папці **fairHire-Platform.DevOps/run-backend-package** знаходиться **start.bat**. Після його запуску відбувається автоматичне розгортання всього бекенд-середовища.
 ### *MacOS/Linux*
-У папці **fairHire-Platform.DevOps/run-backend-package** знаходиться **start.sh**.
-#### Покроковий запуск
-  1. Cmd + Space
-  2. "Terminal"
-  3. Потрібно перейти до папки, куди завантажився проект, за допомогою команди **cd**
-     
-      ```
-      cd ~/<шлях_до_папки>/fairHire-Platform.DevOps
-      ```
-      
-      Приклад:
-      ```
-      cd ~/Documents/Projects/fairHire-Platform.DevOps
-      ```
-      
-  4. Запуск скрипта:
-     
-     ```
-     ./run-backend-package/start.sh
-     ```
-     
-     **Якщо запуск видає помилку `Permission denied`:**
-      це означає, що файл втратив права на запуск. Виправляється це однією командою:
-     
-      ```
-      chmod +x ./run-backend-package/start.sh
-      ```
-      
-      Після цього повторіть команду запуску.
-
-Після запуску скрипта відбувається автоматичне розгортання всього бекенд-середовища.
+У папці **fairHire-Platform.DevOps/run-backend-package** знаходиться **start.command**. Після його запуску відбувається автоматичне розгортання всього бекенд-середовища.
 
 ## 4. Перевірка
 
